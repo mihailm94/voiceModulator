@@ -1,0 +1,3 @@
+#!/bin/bash
+
+alsactl restore -f /home/pi/asound.state

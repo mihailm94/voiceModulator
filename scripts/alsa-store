@@ -1,0 +1,15 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          alsa-store
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Store Alsa settings
+# Description:    The purpose of this script is to stores the last Alsa volume
+#settings to a file in the home directory at shutdown time.
+### END INIT INFO
+
+#save alsa mixer values to local .state file in order to load from them at boot
+#otherwise they get reset
+alsactl store -f /home/pi/asound.state
