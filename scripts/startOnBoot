@@ -1,0 +1,5 @@
+#!/bin/sh
+sleep 10
+
+sudo python ./project_nrsss0555407/src/modules/main.py
+

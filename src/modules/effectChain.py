@@ -10,13 +10,13 @@
 def writeFile(string):
 
     #open file for writing
-    file = open("./modules/effectApply.py", "w")
+    file = open("./project_nrsss0555407/src/modules/effectApply.py", "w")
 
     file.write("import sys")
     file.write("\n\n")
     
     #append to sys path cause you cannot import directly from another folder
-    file.write("sys.path.append(\'../python-audio-effects/pysndfx\')")
+    file.write("sys.path.append(\'./project_nrsss0555407/src/python-audio-effects/pysndfx\')")
     file.write("\n\n")
 
     file.write("from pysndfx import AudioEffectsChain")
@@ -41,14 +41,14 @@ def writeFile(string):
     file.write(")")
     file.write("\n\n")
 
-    file.write("infile = \'../audioFiles/file.wav\'")
+    file.write("infile = \'./project_nrsss0555407/src/audioFiles/file.wav\'")
     file.write("\n")
 
-    file.write("outfile = \'../audioFiles/modulated.wav\'")
+    file.write("outfile = \'./project_nrsss0555407/src/audioFiles/modulated.wav\'")
     file.write("\n\n")
 
     file.write("fx(infile, outfile)")
-    #file.write("\n")
+    file.write("\n")
 
     #closing is important
     file.close()

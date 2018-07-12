@@ -6,12 +6,12 @@ import time
 import signal
 import subprocess
 import sys
-
+import os
 #SERIAL
 import serial
 
-#MODULES (in dir modules)
-sys.path.append('./modules')
+#MODULES (in directory modules)
+#sys.path.append('./modules')
 import record
 import effectChain
 
@@ -34,7 +34,11 @@ state = GPIO.input(RESET_BUTTON)
 serial = serial.Serial('/dev/ttyUSB0', 9600)
 
 #effects array
-effects = []
+effects = ['']
+
+
+print("welcome to VoiceModulator")
+
 
 while True:
     #poll serial port (byte read)
@@ -42,12 +46,12 @@ while True:
     
     #if key = A, start recording
     if(read_key == 'A'):
+        print("recording")
         record.startRec(read_key)
         
-        #subprocess.Popen('cp ./audioFiles/file.wav ./audioFiles/fileCopy.wav', shell=True)
-
     #if key = B, terminate recording
     elif(read_key == 'B'):
+        print("rec interrupt")
         record.startRec(read_key)
     
     #volumeup
@@ -64,29 +68,74 @@ while True:
         #reverb
         #append to effect array
         effects.append(".reverb()")
-        print("append reverb to array")
+        print("reverb")
 
     elif(read_key == '2'):
         #delay
         #append to effects array
         effects.append(".delay()")
-        print("appended delay to effects") 
+        print("delay") 
+    
+    elif(read_key == '3'):
+        #phaser
 
+        #does not function properly
+        effects.append(".phaser()")
+        print("phaser")
+
+    elif(read_key == '4'):
+        #pitch up
+        effects.append(".pitch(1400, True)")
+        print("pitch up")
+    
+    elif(read_key == '5'):
+        #pitch down
+        effects.append(".pitch(-750, True)")
+        print("pitch down")
+    
+    elif(read_key == '6'):
+        #reverse
+        effects.append(".reverse()")
+        print("reverse")
+        
+    elif(read_key == '7'):
+        effects.append(".speed(2)")
+        print("speed")
+
+    elif(read_key == '8'):
+        effects.append(".tremolo(4000)")
+        print("tremolo")
+
+    elif(read_key == '9'):
+        effects.append(".tempo(800)")
+        print("tempo")
 
     #apply selected effect
     elif(read_key == 'E'):
-        
+        #first clear the effect file
+        effectChain.writeFile('')
+
         #cast array to single string
         effStr = ''.join(effects)
         effectChain.writeFile(effStr)
         
-        #os.system('python ./modules/effectApply2.py')
+        subprocess.Popen('python ./project_nrsss0555407/src/modules/effectApply.py', shell=True)
         
+        time.sleep(1)
+
+        effects = ['']
+        effectChain.writeFile(str(effects))
+
         print("success")
+    
+    elif(read_key == '0'):
+        effects = ['']
+        effectChain.writeFile(str(effects))
+        print("effect chain reset")
 
     elif(read_key == 'F'):
        
-        subprocess.Popen('aplay ./audioFiles/modulated.wav', shell=True)
+        subprocess.Popen('aplay ./project_nrsss0555407/src/audioFiles/modulated.wav', shell=True)
 
 
 #subprocess.Popen('kill -9 `ps -ef | pgrep resetProcess.py`', shell=True)

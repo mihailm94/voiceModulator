@@ -4,7 +4,8 @@ import signal
 import subprocess 
 import os
 
-bashCommand = "ffmpeg -y -f alsa -i hw:1 -t 10 ./audioFiles/file.wav  -t 10 ./audioFiles/modulated.wav"
+bashCommand = "ffmpeg -y -f alsa -i hw:1 -t 10 ./project_nrsss0555407/src/audioFiles/file.wav  -t 10 ./project_nrsss0555407/src/audioFiles/modulated.wav"
+
 ledCommand = "python recordLed.py"
 
 #sudo killall not needed, as we send signal.SIGINT to the process
@@ -45,4 +46,5 @@ def startRec(character):
     
     #led = subprocess.Popen(ledCommand.split(), stdout=subprocess.PIPE)
     
-    
+    if character == 'B'
+        record.terminate()

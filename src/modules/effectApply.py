@@ -1,15 +1,15 @@
 import sys
 
-sys.path.append('../python-audio-effects/pysndfx')
+sys.path.append('./project_nrsss0555407/src/python-audio-effects/pysndfx')
 
 from pysndfx import AudioEffectsChain
 
 fx = ( 
-	AudioEffectsChain().highshelf().reverb().delay().lowshelf()
+	AudioEffectsChain().highshelf()[''].lowshelf()
 
 )
 
-infile = '../audioFiles/file.wav'
-outfile = '../audioFiles/modulated.wav'
+infile = './project_nrsss0555407/src/audioFiles/file.wav'
+outfile = './project_nrsss0555407/src/audioFiles/modulated.wav'
 
 fx(infile, outfile)
