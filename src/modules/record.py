@@ -2,21 +2,18 @@ import RPi.GPIO as GPIO
 import time
 import signal
 import subprocess 
+import os
 
-BUTTON = 17
-
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(BUTTON, GPIO.IN)
-
-bashCommand = "ffmpeg -y -f alsa -i hw:1 -t 10 file.wav"
+bashCommand = "ffmpeg -y -f alsa -i hw:1 -t 10 ./audioFiles/file.wav"
 ledCommand = "python recordLed.py"
 
 #sudo killall not needed, as we send signal.SIGINT to the process
 #pidCommand = "sudo killall ffmpeg"
 
-is_recording = False
-response_time = 1
+#is_recording = False
+#response_time = 1
 
+'''
 while True:
     state = GPIO.input(BUTTON)
     
@@ -37,5 +34,11 @@ while True:
         is_recording = False
     
     time.sleep(response_time)
+'''
 
+def startRec(character):
+
+    record = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE, stdin=subprocess.PIPE)
+    #led = subprocess.Popen(ledCommand.split(), stdout=subprocess.PIPE)
+    
     
