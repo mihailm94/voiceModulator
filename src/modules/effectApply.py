@@ -1,6 +1,6 @@
 import sys
 
-sys.path.append('./project_nrsss0555407/src/python-audio-effects/pysndfx')
+sys.path.append('/home/pi/project_nrsss0555407/src/python-audio-effects/pysndfx')
 
 from pysndfx import AudioEffectsChain
 
@@ -9,7 +9,7 @@ fx = (
 
 )
 
-infile = './project_nrsss0555407/src/audioFiles/file.wav'
-outfile = './project_nrsss0555407/src/audioFiles/modulated.wav'
+infile = '/home/pi/project_nrsss0555407/src/audioFiles/file.wav'
+outfile = '/home/pi/project_nrsss0555407/src/audioFiles/modulated.wav'
 
 fx(infile, outfile)

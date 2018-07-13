@@ -4,7 +4,7 @@ import signal
 import subprocess 
 import os
 
-bashCommand = "ffmpeg -y -f alsa -i hw:1 -t 10 ./project_nrsss0555407/src/audioFiles/file.wav  -t 10 ./project_nrsss0555407/src/audioFiles/modulated.wav"
+bashCommand = "ffmpeg -y -f alsa -i hw:1 -t 10 /home/pi/project_nrsss0555407/src/audioFiles/file.wav  -t 10 /home/pi/project_nrsss0555407/src/audioFiles/modulated.wav"
 
 ledCommand = "python recordLed.py"
 
@@ -37,14 +37,17 @@ while True:
     time.sleep(response_time)
 '''
 
-def startRec(character):
+#is_recording = False
 
-    record = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE, stdin=subprocess.PIPE)
+def startRec(character):
     
+    record = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
+        
+            
+
     #if record.poll() is not None:
     #    subprocess.Popen('cp ../audioFiles/file.wav ../audioFiles/modulated.wav')
     
     #led = subprocess.Popen(ledCommand.split(), stdout=subprocess.PIPE)
     
-    if character == 'B'
-        record.terminate()
+    

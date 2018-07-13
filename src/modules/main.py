@@ -52,17 +52,21 @@ while True:
     #if key = B, terminate recording
     elif(read_key == 'B'):
         print("rec interrupt")
-        record.startRec(read_key)
-    
+        #record.startRec(read_key)
+        subprocess.Popen('sudo killall ffmpeg', shell = True)
+
     #volumeup
     elif(read_key == 'C'):
         #volumeup
         print("volup")
+        subprocess.Popen('amixer -c1 sset \'Speaker\' 5%+', shell = True)
 
     #volumedown
     elif(read_key == 'D'):
         #volumedown
         print("voldown")    
+        subprocess.Popen('amixer -c1 sset \'Speaker\' 5%-', shell = True)
+                
         
     elif(read_key == '1'):
         #reverb
@@ -119,7 +123,7 @@ while True:
         effStr = ''.join(effects)
         effectChain.writeFile(effStr)
         
-        subprocess.Popen('python ./project_nrsss0555407/src/modules/effectApply.py', shell=True)
+        subprocess.Popen('python /home/pi/project_nrsss0555407/src/modules/effectApply.py', shell=True)
         
         time.sleep(1)
 
@@ -135,7 +139,7 @@ while True:
 
     elif(read_key == 'F'):
        
-        subprocess.Popen('aplay ./project_nrsss0555407/src/audioFiles/modulated.wav', shell=True)
+        subprocess.Popen('aplay /home/pi/project_nrsss0555407/src/audioFiles/modulated.wav', shell=True)
 
 
 #subprocess.Popen('kill -9 `ps -ef | pgrep resetProcess.py`', shell=True)
