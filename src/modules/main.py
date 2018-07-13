@@ -7,6 +7,8 @@ import signal
 import subprocess
 import sys
 import os
+import threading
+from threading import Thread
 #SERIAL
 import serial
 
@@ -14,45 +16,62 @@ import serial
 #sys.path.append('./modules')
 import record
 import effectChain
+import led
 
 #Button on 
-RESET_BUTTON = 17
+REBOOT = 17
 
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(RESET_BUTTON, GPIO.IN)
+GPIO.setup(REBOOT, GPIO.IN)
 
-#activate killall "watchdog"
-#watchdog = subprocess.Popen('pkill -f resetProcess.py', shell=True))
-
-#watchdog = subprocess.Popen('python resetProcess.py', shell=True)
-
-
-#poll all the time for incoming button presses
-state = GPIO.input(RESET_BUTTON)
-
-#set up usb connection to arduino/nodemcu , baudrate = 9600
 serial = serial.Serial('/dev/ttyUSB0', 9600)
 
 #effects array
 effects = ['']
 
+#create LED object
+led = led.Lights()
+
+#turn off leds at first
+led.off()
+
+#flash leds when script has loaded
+led.wakeup()
+time.sleep(2)
+led.off()
 
 print("welcome to VoiceModulator")
-
 
 while True:
     #poll serial port (byte read)
     read_key = serial.read()
+
+    #poll gpio
+    state = GPIO.input(REBOOT)
     
+    #reboot if button pressed
+    #if(not state):
+    #    print("going down")
+    #    subprocess.Popen('sudo reboot', shell = True)
+
+
     #if key = A, start recording
     if(read_key == 'A'):
         print("recording")
-        record.startRec(read_key)
+        #record.startRec(read_key)
+                
+        record_thread = Thread(target=record.startRec(read_key))
         
+        if not record_thread.isAlive():
+            led.think()
+         
+        led.off()
+
     #if key = B, terminate recording
     elif(read_key == 'B'):
         print("rec interrupt")
         #record.startRec(read_key)
+        led.off()
         subprocess.Popen('sudo killall ffmpeg', shell = True)
 
     #volumeup
@@ -71,20 +90,20 @@ while True:
     elif(read_key == '1'):
         #reverb
         #append to effect array
-        effects.append(".reverb()")
+        effects.append(".reverb(60, 50, 100, 75, 40, 4, False)")
         print("reverb")
 
     elif(read_key == '2'):
         #delay
         #append to effects array
-        effects.append(".delay()")
+        effects.append(".delay(0.9, 0.8)")
         print("delay") 
     
     elif(read_key == '3'):
         #phaser
 
         #does not function properly
-        effects.append(".phaser()")
+        effects.append(".phaser(0.9, 0.8, 5, 0.25, 2, True)")
         print("phaser")
 
     elif(read_key == '4'):

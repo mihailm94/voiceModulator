@@ -1,4 +1,7 @@
-import LEDdriver/apa102
+import sys
+sys.path.append('/home/pi/project_nrsss0555407/src/LEDdriver')
+
+import apa102
 import time
 import threading
 
@@ -7,7 +10,7 @@ try:
 except ImportError:
     import Queue as Queue
 
-class Recording:
+class Lights:
     PIXELS_N = 3
     
     def __init__(self):
@@ -34,8 +37,10 @@ class Recording:
         self.queue.put(f)
 
     def _wakeup(self, direction=0):
+
         for i in range(1, 25):
             colors = [i * v for v in self.basis]
+
             self.write(colors)
             time.sleep(0.01)
 
@@ -75,8 +80,7 @@ class Recording:
             t /= 2
 
         self.colors = colors
-
-
+   
     def _off(self):
         self.write([0] * 3 * self.PIXELS_N)
 
@@ -85,19 +89,23 @@ class Recording:
         self.next.set()
         self.queue.put(self._off)
 
-pixels = Recording()
+#pixels.wakeup()
+#time.sleep(3)
+#pixels.off()
 
+'''
 if __name__ == '__main__':
     while True:
         try:
-            #pixels.wakeup()
-            #time.sleep(3)
-            pixels.think()
+            pixels.wakeup()
             time.sleep(3)
-            #pixels.off()
+            #pixels.think()
+            #time.sleep(3)
+            pixels.off()
             #time.sleep(3)
         except KeyboardInterrupt:
             break
 
-    pixels.off()
-    time.sleep(1)
+    #pixels.off()
+    #time.sleep(1)
+'''    
