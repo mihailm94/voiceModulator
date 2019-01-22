@@ -3,7 +3,8 @@
 #### Wiki
 
 1. [Bilder](#Bilder)
-2. [Projekphasen](#Projekphasen)
+2. [Einführung](#Einf)
+3. [Projekphasen](#Projekphasen)
    1. [Konzeptphase](#Konzeptphase)
    2. [Definitionsphase](#Definitionsphase)
    3. [Entwurfsphase](#Entwurfsphase)
@@ -20,15 +21,16 @@
 ![5](/img/presentation/5.png)
 ![6](/img/presentation/6.png)
 
-# Projekphasen <a name="Projekphasen"></a>
-
-## Konzeptphase <a name="Konzeptphase"></a>
-
-### Projekt-Idee <a name="Projekt-Idee"></a>
+## Einführung <a name="Einf"></a>
 
 Der VoiceModulator ist eine Fortsetzung des Moduls Leiterplattenentwurf vom Wintersemester 17/18 an der HTW Berlin. In dem Modul haben wir die Leiterplatte in KiCAD entworfen und danach im Labor entwickelt und überprüft. Darauf folgend haben wir uns mit der Bestückung der Leiterplatte beschäftigt.
 
 Das VoiceModulator Projekt wurde im Sommersemester 2018 im Kurs Project Computer Systems Engineering umgesetzt, unter der Betreuung von Prof. Dr. Frank Bauernöppel und Prof. Dr.-Ing. Carsten Thomas.
+
+
+## Konzeptphase <a name="Konzeptphase"></a>
+
+### Projekt-Idee <a name="Projekt-Idee"></a>
 
 VoiceModulator ist ein Produkt, das Stimme aufnehmen kann, sie verändern und mit ihr auf interessanten Weise spielen. Mit dem VoiceModulator kann der Benutzer seine Stimme aufnehmen, modulieren, und sie wiedergeben.
 
