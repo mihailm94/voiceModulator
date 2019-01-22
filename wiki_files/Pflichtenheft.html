@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Pflichtenheft</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<style>
+body { font:80% Verdana,Tahoma,Arial,sans-serif; }
+h1, h2, h3, h4 {  font-family: "Trebuchet MS",Georgia,"Times New Roman",serif; }
+ul.toc { padding: 4px; margin-left: 0; }
+ul.toc li { list-style-type:none; }
+ul.toc li.heading2 { margin-left: 1em; }
+ul.toc li.heading3 { margin-left: 2em; }
+a.wiki-anchor { display: none; margin-left: 6px; text-decoration: none; }
+a.wiki-anchor:hover { color: #aaa !important; text-decoration: none; }
+h1:hover a.wiki-anchor, h2:hover a.wiki-anchor, h3:hover a.wiki-anchor { display: inline; color: #ddd; }
+</style>
+</head>
+<body>
+<a name="Pflichtenheft"></a>
+<h1 >Pflichtenheft<a href="#Pflichtenheft" class="wiki-anchor">&para;</a></h1>
+
+
+	<p><ins>B.0.0</ins> Das Produkt Muss als Raspberry Pi extension board (HAT) implementiert werden.</p>
+
+
+<ins>B.1.1</ins>
+	<ul>
+	<li>B.1.1.0 Das Produkt wird mit Stromanschluss ein-/ausgeschaltet. </li>
+		<li>B.1.1.1 Die Lautstärke der Wiedergabe soll mittels einer Taste einstellbar sein. Der Einstellungsvorgang befindet sich in einer Schleife, die die Tonstärke ständig inkrementiert. Wenn der maximale Wert erreicht wird, wird er wieder auf den minimalen gesetzt und der Vorgang neugestartet.</li>
+		<li>B.1.1.3 Dem User stehen Tasten zur Verfügung, die voreingestellte Effekten entsprechen müssen. Jede Taste soll ein Effekt entsprechen.</li>
+	</ul>
+
+
+<ins>B.1.2</ins><br />B.1.2.1 Bedingung: wenn der User die A-Taste zur Aufnahme betätigt, muss der Aufnahme-Vorgang gestartet werden. Sobald die B-Taste gedrückt wird, muss die Aufnahme beenden.
+	<ul>
+	<li>B.1.2.1.1 Die länge der Aufnahme soll maximal 10s betragen. Nach Überschreitung dieses Zeitfensters wird die Aufnahme automatisch beendet.</li>
+	</ul>
+
+
+	<p>B.1.2.2 Die Stimme muss mithilfe des Audio-Codec Chips zu einem Audio-Datei konvertiert werden.<br />B.1.2.3 Das Sample wird auf den Hauptspeicher der RaspberryPi gespeichert.<br />B.1.2.4 Die Auflösung &#38; Format der Aufnahme soll ~1096 kbps FLAC sein.</p>
+
+
+<ins>B.1.3</ins><br />B.1.3.1 Durch vorprogrammierte Software muss das Sample <sup><a href="Glossar.html#Glossar" class="wiki-page">[7</a>]</sup> verarbeitet werden.
+	<ul>
+	<li>B.1.3.1.0 Nach dem Effekt-Auswahl wird die Modulierung gestartet.</li>
+		<li>B.1.3.1.1 Die mögliche Effekte sollen Pitch-changer <sup><a href="Glossar.html#Glossar" class="wiki-page">[2</a>]</sup>, Reverb <sup><a href="Glossar.html#Glossar" class="wiki-page">[3</a>]</sup>, Reverse <sup><a href="Glossar.html#Glossar" class="wiki-page">[4</a>]</sup>,Pikachu <sup><a href="Glossar.html#Glossar" class="wiki-page">[5</a>]</sup>,Satan <sup><a href="Glossar.html#Glossar" class="wiki-page">[6</a>]</sup>  sein.</li>
+	</ul>
+
+
+<ins>B.1.4</ins><br />B.1.4.1 Auf dem HAT stehen 2 Möglichkeiten zur Wiedergabe.
+	<ul>
+	<li>B.1.4.1.1 Ein 3.5mm Anschluss dient zur Verbindung mit einer externen Anlage.</li>
+		<li>B.1.4.1.2 Dank der eingebaute Verstärker kann die Verarbeitete Stimme mithilfe eines angeschlossenen Lautsprechers abgespielt werden.</li>
+	</ul>
+
+
+<ins>B.1.5</ins><br />B.1.5.1 Bedingung: nach erfolgreiche Aufnahme und Modulierung muss der User eine Taste drücken um die Wiedergabe zu starten.
+	<ul>
+	<li>B.1.5.1.1 Wird die Taste nach der ersten Wiedergabe wieder betätigt, so erfolgt eine Wiederholung derselben Aufnahme.</li>
+		<li>B.1.5.1.2 Die vorherige Aufnahme muss gelöscht werden erst nachdem die Taste zur Aufnahme gedrückt wird.</li>
+	</ul>
+</body>
+</html>

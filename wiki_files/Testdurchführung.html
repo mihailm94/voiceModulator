@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Testdurchführung</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<style>
+body { font:80% Verdana,Tahoma,Arial,sans-serif; }
+h1, h2, h3, h4 {  font-family: "Trebuchet MS",Georgia,"Times New Roman",serif; }
+ul.toc { padding: 4px; margin-left: 0; }
+ul.toc li { list-style-type:none; }
+ul.toc li.heading2 { margin-left: 1em; }
+ul.toc li.heading3 { margin-left: 2em; }
+a.wiki-anchor { display: none; margin-left: 6px; text-decoration: none; }
+a.wiki-anchor:hover { color: #aaa !important; text-decoration: none; }
+h1:hover a.wiki-anchor, h2:hover a.wiki-anchor, h3:hover a.wiki-anchor { display: inline; color: #ddd; }
+</style>
+</head>
+<body>
+<a name="Testdurchführungen"></a>
+<h1 >Testdurchführungen<a href="#Testdurchführungen" class="wiki-anchor">&para;</a></h1>
+
+
+	<a name="1Modulation-von-existierenden-Datei-1"></a>
+<h3 >1.Modulation von existierenden Datei <sup><a href="Testspezifikationen.html#Testspezifikationen" class="wiki-page">[1</a>]</sup><a href="#1Modulation-von-existierenden-Datei-1" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>- Die Datei befindet sich im Speicher des Raspberry-Pi's im .mp3 Format. <br />- Mittels Command Line Interface wird ein Effekt von der SoX Bibliothek verwendet.<br />- Die Modulation ergibt eine neue Datei mit anderem Namen und speichert sie in derselben Ordner.<br />- Mittels Command Line und ~aplay Befehl wird die modulierte Datei wiedergespielt.<br />- Kopföhrer sind in dieser Phase benutzt. Lautsprecher ist nicht angeschlossen.</p>
+
+
+	<a name="2Modulation-von-aufgenommenen-Datei-2"></a>
+<h3 >2.Modulation von aufgenommenen Datei <sup><a href="Testspezifikationen.html#Testspezifikationen" class="wiki-page">[2</a>]</sup><a href="#2Modulation-von-aufgenommenen-Datei-2" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>- Die Implementierung des Arduino-boards und Tastatur erfolgt in diesem Schritt.<br />- Eine Taste dient zum Starten der Aufnahme<br />- Nach 10 Sekunden hört die Aufnahme automatisch auf.<br />- Die Aufnahme wird im Speicher gespeichert und überschreibt existierenden Datei, da derselben Name für eine neue Aufnahme benutzt wird.<br />- Mittels Command Line Interface wird ein Effekt von der SoX Bibliothek verwendet.<br />- Mittels Command Line und ~aplay Befehl wird die modulierte Datei wiedergespielt.<br />- Tastatur-Tasten werden in diesem Schritt zum Aufnahme-Befehl &#38; Wiedespielen-Befehl gemappt.</p>
+
+
+	<a name="3Modulationskette-in-einem-Datei-3"></a>
+<h3 >3.Modulationskette in einem Datei <sup><a href="Testspezifikationen.html#Testspezifikationen" class="wiki-page">[3</a>]</sup><a href="#3Modulationskette-in-einem-Datei-3" class="wiki-anchor">&para;</a></h3>
+
+
+	<p>- Nach einer fehlerfreien Aufnahme werden mehrere Effekte ausgewählt.<br />- Mittels Command Line Interface werden diese angewendet.<br />- Nach fehlerfreien und korrekten Ausführung und Wiedergabe der Modulierten Datei, werden mehrere Tasten der Tastatur zu Effekten gemappt.</p>
+
+
+	<a name="4Lautsprecher-Anschluss-38-Verstärker-4"></a>
+<h4 >4.Lautsprecher-Anschluss &#38; Verstärker <sup><a href="Testspezifikationen.html#Testspezifikationen" class="wiki-page">[4</a>]</sup><a href="#4Lautsprecher-Anschluss-38-Verstärker-4" class="wiki-anchor">&para;</a></h4>
+
+
+	<p>- Der Lautsprecheranschluss wird benutzt um einen kleinen Lautsprecher anzuschliessen.<br />- Mittels ALSA-Mixer erfolgt eine Einstellung der Klangstärke.<br />- Ein Script wird benutzt um diese Einstellungen im Speicher abzulagern.<br />- Im Fall eines Neu-Starts werden diese Einstellungen geladen und angewendet.<br />- Zwei Tasten von der Tastatur werden benutzt um die Lautstärke der Wiedergabe einzustellen</p>
+</body>
+</html>
