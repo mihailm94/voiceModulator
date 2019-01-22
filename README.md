@@ -10,9 +10,6 @@
     *   [Bilder](#Bilder)
 
 
-
-## Bilder <a name="Bilder"></a>
-
 # Projekphasen <a name="Projekphasen"></a>
 
 ## Konzeptphase <a name="Konzeptphase"></a>
@@ -23,11 +20,11 @@ VoiceModulator ist ein Produkt, das Stimme aufnehmen kann, sie verändern und mi
 
 Mit der eingebauten Tastatur kann der Benutzer zwischen folgenden Effekten wählen:  
 ```
-- Reverb <sup>[[2](#Glossar)]</sup>  
-- Reverse <sup>[[3](#Glossar)]</sup>  
-- Pitch <sup>[[4](#Glossar)]</sup>  
-- Pikachu <sup>[[5](#Glossar)]</sup>  
-- Satan <sup>[[6](#Glossar)]</sup>
+- Reverb
+- Reverse
+- Pitch 
+- Pikachu
+- Satan
 ```
 Zusätzlich kann der Benutzer die Lautstärke ändern.
 
@@ -46,8 +43,8 @@ A.1.1 Der VoiceModulator soll über eine Tastatur bedient werden.
    A.1.1.3 Jeder Effekt soll über eine eigene Taste verfügbar sein.
 
 A.1.2 Der VoiceModulator muss mittels 2 Mikrofons Stimme aufnehmen.  
-A.1.3 Der VoiceModulator muss die aufgenommene Stimme mit Effekten modulieren <sup>[[1](#Glossar)]</sup>.
-   A.1.3.1 Dem Benutzer soll die Moöglichkeit gegeben werden, zwischen Pitch- <sup>[[2](Glossar)]</sup>,Reverb- <sup>[[3](Glossar)]</sup>,Reverse <sup>[[4](#Glossar)]</sup>,Pikachu <sup>[[5](#Glossar)]</sup>,Satan <sup>[[6](#Glossar)]</sup> Effekt auszuwählen.
+A.1.3 Der VoiceModulator muss die aufgenommene Stimme mit Effekten modulieren.
+   A.1.3.1 Dem Benutzer soll die Moöglichkeit gegeben werden, zwischen Pitch- ,Reverb- ,Reverse- ,Pikachu- oder Satan-Effekt auszuwählen.
 
 A.1.4 Der VoiceModulator muss die modulierte Stimme, entsprechend dem gewählten Effekt, wiederspielen.  
 A.1.5 Die Wiedergabe derselben Stimme soll bis zum nächsten neuen Aufnahme möglich sein.
@@ -61,7 +58,7 @@ A.1.7 Die eingebauten LEDs sollen als Anzeige des laufenden Aufnahmevorganges in
 A.2.0 Der VoiceModulator sollte in einer kubischen Box eingebaut werden.  
 A.2.1 Der Effektauswahl sollte durch schütteln ersetzt werden. Somit sollte nach Aufnahme der Stimme ein Effekt zufällig vom System gewählt werden.  
 A.2.2 Das Produkt sollte mit zusätzlichen Effekten erweitert werden.  
-A.2.3 In abhängigkeit vom gewählten Effekt sollte ein zugehöriges Display farbig leuchten, entsprechend der Waveform <sup>[[8](#Glossar)]</sup> der Aufnahme.  
+A.2.3 In abhängigkeit vom gewählten Effekt sollte ein zugehöriges Display farbig leuchten, entsprechend der Waveform der Aufnahme.  
 A.2.4 Der VoiceModulator verfügt über 2 Mikrofons. Ein Algorithmus sollte implementiert werden, der dank der Stereo-Funktionalität den Mikrofons, die Stimme aufklärt. Nebengeräusche und Hintergrundstimmen sollten ausgelöscht werden.
 ```
 
@@ -86,9 +83,9 @@ B.1.2
    B.1.2.4 Die Auflösung & Format der Aufnahme soll ~1096 kbps FLAC sein.
 
 B.1.3
-   B.1.3.1 Durch vorprogrammierte Software muss das Sample <sup>[[7](#Glossar)]</sup> verarbeitet werden.
+   B.1.3.1 Durch vorprogrammierte Software muss das Sample verarbeitet werden.
       B.1.3.1.0 Nach dem Effekt-Auswahl wird die Modulierung gestartet.
-      B.1.3.1.1 Die mögliche Effekte sollen Pitch-changer <sup>[[2](#Glossar)]</sup>, Reverb <sup>[[3](#Glossar)]</sup>, Reverse <sup>[[4](#Glossar)]</sup>,Pikachu <sup>[[5](#Glossar)]</sup>,Satan <sup>[[6](#Glossar)]</sup> sein.
+      B.1.3.1.1 Die mögliche Effekte sollen Pitch-changer, Reverb, Reverse, Pikachu oder Satan sein.
 
 B.1.4
    B.1.4.1 Das HAT stellt 2 Möglichkeiten zur Wiedergabe zur Verfügung.
@@ -235,3 +232,5 @@ Der Satan-Effekt haben wir die Veränderung der Aufnahme durch Verzögerung und 
 - Im Fall eines Neu-Starts werden diese Einstellungen geladen und angewendet.  
 - Zwei Tasten von der Tastatur werden benutzt um die Lautstärke der Wiedergabe einzustellen
 ```
+
+## Bilder <a name="Bilder"></a>
