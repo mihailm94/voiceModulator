@@ -1,18 +1,24 @@
 # HeliumVoice - Wiki
 
-*   [Wiki](#Wiki)
-   *   [Bilder](#Bilder)
-   *   [Projekphasen](#Projekphasen)
-      *   [Konzeptphase](#Konzeptphase)
-      *   [Definitionsphase](#Definitionsphase)
-      *   [Entwurfsphase](#Entwurfsphase)
-      *   [Fertigungsphase](#Fertigungsphase)
-      *   [Wartungsphase](#Wartungsphase)
+#### Wiki
+
+1. [Bilder](#Bilder)
+2. [Projekphasen](#Projekphasen)
+   1. [Konzeptphase](#Konzeptphase)
+   2. [Definitionsphase](#Definitionsphase)
+   3. [Entwurfsphase](#Entwurfsphase)
+	 4. [Fertigungsphase](#Fertigungsphase)
+	 5. [Wartungsphase](#Wartungsphase)
     
 
 ## Bilder <a name="Bilder"></a>
 
-![presentation](/img/presentation/presentationIMG.png)
+![1](/img/presentation/1.png)
+![2](/img/presentation/2.png)
+![3](/img/presentation/3.png)
+![4](/img/presentation/4.png)
+![5](/img/presentation/5.png)
+![6](/img/presentation/6.png)
 
 # Projekphasen <a name="Projekphasen"></a>
 
