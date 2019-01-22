@@ -1,14 +1,18 @@
 # HeliumVoice - Wiki
 
 *   [Wiki](#Wiki)
-    *   [Projekphasen](#Projekphasen)
-        *   [Konzeptphase](#Konzeptphase)
-        *   [Definitionsphase](#Definitionsphase)
-        *   [Entwurfsphase](#Entwurfsphase)
-        *   [Fertigungsphase](#Fertigungsphase)
-        *   [Wartungsphase](#Wartungsphase)
-    *   [Bilder](#Bilder)
+   *   [Bilder](#Bilder)
+   *   [Projekphasen](#Projekphasen)
+      *   [Konzeptphase](#Konzeptphase)
+      *   [Definitionsphase](#Definitionsphase)
+      *   [Entwurfsphase](#Entwurfsphase)
+      *   [Fertigungsphase](#Fertigungsphase)
+      *   [Wartungsphase](#Wartungsphase)
+    
 
+## Bilder <a name="Bilder"></a>
+
+![presentation](/img/presentation/presentationIMG.png)
 
 # Projekphasen <a name="Projekphasen"></a>
 
@@ -236,6 +240,3 @@ Der Satan-Effekt haben wir die Veränderung der Aufnahme durch Verzögerung und 
 - Im Fall eines Neu-Starts werden diese Einstellungen geladen und angewendet.  
 - Zwei Tasten von der Tastatur werden benutzt um die Lautstärke der Wiedergabe einzustellen
 ```
-
-## Bilder <a name="Bilder"></a>
-
