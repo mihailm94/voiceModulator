@@ -101,6 +101,8 @@ B.1.5
 
 ### UML-Zustandsdiagramm <a name="UML-Zustandsdiagramm"></a>
 
+![UML-Diagramm](/img/uml.png)
+
 ### Produkt Module <a name="Produkt-Module"></a>
 
 Unser Produkt besteht aus folgendem Hardware:
@@ -169,11 +171,13 @@ Der Satan-Effekt haben wir die Veränderung der Aufnahme durch Verzögerung und 
 
 ### Blockschaltbild <a name="Blockschaltbild"></a>
 
+![Blockschaltbild](img/blockschaltbild.png)
 
 ## Fertigungsphase <a name="Fertigungsphase"></a>
 
 ### BOM (Umsetzung) <a name="BOM-Umsetzung"></a>
 
+![BOM](img/BOM.png)
 
 ## Wartungsphase <a name="Wartungsphase"></a>
 
@@ -234,3 +238,4 @@ Der Satan-Effekt haben wir die Veränderung der Aufnahme durch Verzögerung und 
 ```
 
 ## Bilder <a name="Bilder"></a>
+
