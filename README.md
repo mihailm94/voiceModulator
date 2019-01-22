@@ -1,8 +1,4 @@
-# HeliumVoice
-
-<a name="Wiki"></a>
-
-# Wiki(#Wiki)
+# HeliumVoice - Wiki
 
 *   [Wiki](#Wiki)
     *   [Projekphasen](#Projekphasen)
@@ -15,14 +11,13 @@
 
 
 
-## Projekphasen <a name="Projekphasen"></a>
-### Konzeptphase <a name="Konzeptphase"></a>
-### Definitionsphase <a name="Definitionsphase"></a>
-### Entwurfsphase <a name="Entwurfsphase"></a>
-### Fertigungsphase <a name="Fertigungsphase"></a>
-### Wartungsphase <a name="Wartungsphase"></a>
 ## Bilder <a name="Bilder"></a>
-# Projekt-Idee <a name="Projekt-Idee"></a>
+
+# Projekphasen <a name="Projekphasen"></a>
+
+## Konzeptphase <a name="Konzeptphase"></a>
+
+### Projekt-Idee <a name="Projekt-Idee"></a>
 
 #### VoiceModulator ist ein Produkt, das Stimme aufnehmen kann, sie verändern und mit ihr auf interessanten Weise spielen. Mit dem VoiceModulator kann der Benutzer seine Stimme aufnehmen, modulieren, und sie wiedergeben.
 
@@ -36,11 +31,11 @@
 #### Zusätzlich kann der Benutzer die Lautstärke ändern.
 
 
-# Lastenheft <a name="Lastenheft"></a>
+### Lastenheft <a name="Lastenheft"></a>
 
 Der VoiceMudulator soll eine Stimme aufnehmen und diese nach einem vorgewählten Effekt wiedergeben.
 
-### Muss- Kriterien <a name="Muss--Kriterien"></a>
+#### Muss- Kriterien <a name="Muss--Kriterien"></a>
 
 ```
 A.1.1 Der VoiceModulator soll über eine Tastatur bedient werden.
@@ -60,7 +55,7 @@ A.1.7 Die eingebauten LEDs sollen als Anzeige des laufenden Aufnahmevorganges in
 ```
 
 
-### Kann- Kriterien <a name="Kann--Kriterien"></a>
+#### Kann- Kriterien <a name="Kann--Kriterien"></a>
 ```
 A.2.0 Der VoiceModulator sollte in einer kubischen Box eingebaut werden.  
 A.2.1 Der Effektauswahl sollte durch schütteln ersetzt werden. Somit sollte nach Aufnahme der Stimme ein Effekt zufällig vom System gewählt werden.  
@@ -69,7 +64,9 @@ A.2.3 In abhängigkeit vom gewählten Effekt sollte ein zugehöriges Display far
 A.2.4 Der VoiceModulator verfügt über 2 Mikrofons. Ein Algorithmus sollte implementiert werden, der dank der Stereo-Funktionalität den Mikrofons, die Stimme aufklärt. Nebengeräusche und Hintergrundstimmen sollten ausgelöscht werden.
 ```
 
-# Pflichtenheft <a name="Pflichtenheft"></a>
+## Definitionsphase <a name="Definitionsphase"></a>
+
+### Pflichtenheft <a name="Pflichtenheft"></a>
 
 ```
 <ins>B.0.0</ins> Das Produkt Muss als Raspberry Pi extension board (HAT) implementiert werden.
@@ -110,30 +107,32 @@ B.1.5.1 Bedingung: nach erfolgreiche Aufnahme und Modulierung muss der User eine
 
 
 
-# UML-Zustandsdiagramm <a name="UML-Zustandsdiagramm"></a>
+### UML-Zustandsdiagramm <a name="UML-Zustandsdiagramm"></a>
 
-# Produkt Module <a name="Produkt-Module"></a>
+### Produkt Module <a name="Produkt-Module"></a>
 
 Unser Produkt besteht aus folgendem Hardware:
 ```
-1\. Raspberry PI 3  
-2\. 4 * 4 Matrix Testator  
-3\. 2 Microphone  
-4\. 1 [W] Lautsprecher  
-5\. 4 [Gb] SD karte
+1. Raspberry PI 3  
+2. SeeedStudio 2-Mic RasPi HAT
+3. NodeMCU v1.0 ESP8266 MCU
+4. 4 * 4 Matrix Tastatur 
+5. 1W Lautsprecher  
+6. 4GB SD karte
 ```
 Für die Entwicklung benutzt: (Software)
 ```
-1\. Raspbian Stretch Lite  
-2\. Python 2.7 & 3.0  
-3\. WM8960 Treiber  
-4\. Git  
-5\. SoX - Audio Bibliothek
+1. Raspbian Stretch Lite  
+2. Python 2.7 & 3.0  
+3. WM8960 Treiber  
+4. Git  
+5. SoX - Audio Bibliothek
+6. HTW Projektmanagement Server
 ```
 
 
 
-# Testspezifikationen <a name="Testspezifikationen"></a>
+### Testspezifikationen <a name="Testspezifikationen"></a>
 ```
 *   **1.Modulation von existierenden Datei**
 *   Der erste Schritt ist auf einer, sich im Speicher befindenden Datei Modulationen durchzuführen.
@@ -148,7 +147,7 @@ Für die Entwicklung benutzt: (Software)
 *   Der letzte Schritt besteht daraus, der Lautsprecher anzuschließen und korrekt zu betreiben.
 ```
 
-# Glossar <a name="Glossar"></a>
+### Glossar <a name="Glossar"></a>
 ```
 **1\. Modulation**
 
@@ -182,37 +181,36 @@ Sample/sampling - der Vorgang, einen Teil einer Aufnahme in einem neuen Kontext 
 Waveform/Wellenform ist die Gestalt und Form des zeitlichen Verlaufs der Veränderung der Amplitude einer Aufnahme.
 ```
 
+## Entwurfsphase <a name="Entwurfsphase"></a>
 
-# Blockschaltbild <a name="Blockschaltbild"></a>
-
-
-
-# BOM (Umsetzung) <a name="BOM-Umsetzung"></a>
+### Blockschaltbild <a name="Blockschaltbild"></a>
 
 
+## Fertigungsphase <a name="Fertigungsphase"></a>
 
-# Wartung und Erweiterungen <a name="Wartung-und-Erweiterungen"></a>
+### BOM (Umsetzung) <a name="BOM-Umsetzung"></a>
 
 
+## Wartungsphase <a name="Wartungsphase"></a>
 
-### perfektionierende Wartung <a name="perfektionierende-Wartung"></a>
+### Wartung und Erweiterungen <a name="Wartung-und-Erweiterungen"></a>
+
+#### perfektionierende Wartung <a name="perfektionierende-Wartung"></a>
 ```
 - die Baud-Rate der Datenübertragung vom Arduino-Board wird zu 115200 statt 9600  
 - Implementierung von 2 weiteren Effekten.
 ```
 
-
-### adaptive Wartung <a name="adaptive-Wartung"></a>
+#### adaptive Wartung <a name="adaptive-Wartung"></a>
 ```
 - die LEDs leuchten farbig(kuze grüne welle) wenn das Produkt nach Anschalten bereit zur Aufnahme ist.  
 - die LEDs leuchten farbig(wechselnd in Rot, Grün und Gelb) solange die Aufnahme läuft.  
 - die LEDs leuchten farbig(einmalig in Rot, Grün und Gelb) wenn der Benutzer Effekte auswählen kann.
 ```
 
-# Testdurchführungen <a name="Testdurchführungen"></a>
+### Testdurchführungen <a name="Testdurchführungen"></a>
 
-
-### 1.Modulation von existierenden Datei <a name="1Modulation-von-existierenden-Datei-1"></a>
+#### 1.Modulation von existierenden Datei <a name="1Modulation-von-existierenden-Datei-1"></a>
 ```
 - Die Datei befindet sich im Speicher des Raspberry-Pi's im .mp3 Format.  
 - Mittels Command Line Interface wird ein Effekt von der SoX Bibliothek verwendet.  
@@ -222,7 +220,7 @@ Waveform/Wellenform ist die Gestalt und Form des zeitlichen Verlaufs der Veränd
 ```
 
 
-### 2.Modulation von aufgenommenen Datei <a name="2Modulation-von-aufgenommenen-Datei-2"></a>
+#### 2.Modulation von aufgenommenen Datei <a name="2Modulation-von-aufgenommenen-Datei-2"></a>
 ```
 - Die Implementierung des Arduino-boards und Tastatur erfolgt in diesem Schritt.  
 - Eine Taste dient zum Starten der Aufnahme  
@@ -234,7 +232,7 @@ Waveform/Wellenform ist die Gestalt und Form des zeitlichen Verlaufs der Veränd
 ```
 
 
-### 3.Modulationskette in einem Datei <a name="3Modulationskette-in-einem-Datei-3"></a>
+#### 3.Modulationskette in einem Datei <a name="3Modulationskette-in-einem-Datei-3"></a>
 ```
 - Nach einer fehlerfreien Aufnahme werden mehrere Effekte ausgewählt.  
 - Mittels Command Line Interface werden diese angewendet.  
@@ -242,7 +240,7 @@ Waveform/Wellenform ist die Gestalt und Form des zeitlichen Verlaufs der Veränd
 ```
 
 
-### 4.Lautsprecher-Anschluss & Verstärker <a name="4Lautsprecher-Anschluss-38-Verstärker-4"></a>
+#### 4.Lautsprecher-Anschluss & Verstärker <a name="4Lautsprecher-Anschluss-38-Verstärker-4"></a>
 ```
 - Der Lautsprecheranschluss wird benutzt um einen kleinen Lautsprecher anzuschliessen.  
 - Mittels ALSA-Mixer erfolgt eine Einstellung der Klangstärke.  
