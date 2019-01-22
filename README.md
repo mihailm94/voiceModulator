@@ -2,7 +2,7 @@
 
 <a name="Wiki"></a>
 
-# Wiki[¶](#Wiki)
+# Wiki(#Wiki)
 
 *   [Wiki](#Wiki)
     *   [Projekphasen](#Projekphasen)
@@ -13,61 +13,18 @@
         *   [Wartungsphase](#Wartungsphase)
     *   [Bilder](#Bilder)
 
-<a name="Projekphasen"></a>
-
-## Projekphasen[¶](#Projekphasen)
-
-<a name="Konzeptphase"></a>
-
-### Konzeptphase[¶](#Konzeptphase)
-
-*   [Projekt-Idee](Projekt-Idee.html)
-*   [Lastenheft](Lastenheft.html)
-
-<a name="Definitionsphase"></a>
-
-### Definitionsphase[¶](#Definitionsphase)
-
-*   [Pflichtenheft](Pflichtenheft.html)
-*   [UML-Zustandsdiagramm](UML-Zustandsdiagramm.html)
-*   [Produkt Module](Produkt_Module.html)
-*   [Testspezifikationen](Testspezifikationen.html)
-*   [Glossar](Glossar.html)
-
-<a name="Entwurfsphase"></a>
-
-### Entwurfsphase[¶](#Entwurfsphase)
-
-*   [Blockschaltbild](Blockschaltbild.html)
-
-<a name="Fertigungsphase"></a>
-
-### Fertigungsphase[¶](#Fertigungsphase)
-
-*   [BOM (Umsetzung)](BOM_(Umsetzung).html)
-
-<a name="Wartungsphase"></a>
-
-### Wartungsphase[¶](#Wartungsphase)
-
-*   [Wartung und Erweiterungen](Wartung_und_Erweiterungen.html)
-*   [Testdurchführung](Testdurchführung.html)
-
-<a name="Bilder"></a>
-
-## Bilder  
-![Prototype](/redmine/attachments/download/9308/prototype.jpg "Prototype")[¶](#Bilder)
 
 
-<a name="Projekt-Idee"></a>
+## Projekphasen <a name="Projekphasen"></a>
+### Konzeptphase <a name="Konzeptphase"></a>
+### Definitionsphase <a name="Definitionsphase"></a>
+### Entwurfsphase <a name="Entwurfsphase"></a>
+### Fertigungsphase <a name="Fertigungsphase"></a>
+### Wartungsphase <a name="Wartungsphase"></a>
+## Bilder <a name="Bilder"></a>
+# Projekt-Idee <a name="Projekt-Idee"></a>
 
-# Projekt-Idee[¶](#Projekt-Idee)
-
-<a name="VoiceModulator-ist-ein-Produkt-das-Stimme-aufnehmen-kann-sie-verändern-und-mit-ihr-auf-interessanten-Weise-spielen-Mit-dem-VoiceModulator-kann-der-Benutzer-seine-Stimme-aufnehmen-modulieren-und-sie-wiedergeben"></a>
-
-#### VoiceModulator ist ein Produkt, das Stimme aufnehmen kann, sie verändern und mit ihr auf interessanten Weise spielen. Mit dem VoiceModulator kann der Benutzer seine Stimme aufnehmen, modulieren, und sie wiedergeben.[¶](#VoiceModulator-ist-ein-Produkt-das-Stimme-aufnehmen-kann-sie-verändern-und-mit-ihr-auf-interessanten-Weise-spielen-Mit-dem-VoiceModulator-kann-der-Benutzer-seine-Stimme-aufnehmen-modulieren-und-sie-wiedergeben)
-
-<a name="Mit-der-eingebauten-Tastatur-kann-der-Benutzer-zwischen-folgenden-Effekten-wählen-Reverb-2-Reverse-3-Pitch-4-Pikachu-5-Satan-6"></a>
+#### VoiceModulator ist ein Produkt, das Stimme aufnehmen kann, sie verändern und mit ihr auf interessanten Weise spielen. Mit dem VoiceModulator kann der Benutzer seine Stimme aufnehmen, modulieren, und sie wiedergeben.
 
 #### Mit der eingebauten Tastatur kann der Benutzer zwischen folgenden Effekten wählen:  
 - Reverb <sup>[[2](Glossar.html#Glossar)]</sup>  
@@ -76,56 +33,45 @@
 - Pikachu <sup>[[5](Glossar.html#Glossar)]</sup>  
 - Satan <sup>[[6](Glossar.html#Glossar)]</sup>[¶](#Mit-der-eingebauten-Tastatur-kann-der-Benutzer-zwischen-folgenden-Effekten-wählen-Reverb-2-Reverse-3-Pitch-4-Pikachu-5-Satan-6)
 
-<a name="Zusätzlich-kann-der-Benutzer-die-Lautstärke-ändern"></a>
-
-#### Zusätzlich kann der Benutzer die Lautstärke ändern.[¶](#Zusätzlich-kann-der-Benutzer-die-Lautstärke-ändern)
+#### Zusätzlich kann der Benutzer die Lautstärke ändern.
 
 
-
-<a name="Lastenheft"></a>
-
-# Lastenheft[¶](#Lastenheft)
+# Lastenheft <a name="Lastenheft"></a>
 
 Der VoiceMudulator soll eine Stimme aufnehmen und diese nach einem vorgewählten Effekt wiedergeben.
 
-<a name="Muss--Kriterien"></a>
+### Muss- Kriterien <a name="Muss--Kriterien"></a>
 
-### Muss- Kriterien[¶](#Muss--Kriterien)
-
+```
 A.1.1 Der VoiceModulator soll über eine Tastatur bedient werden.
-
-*   A.1.1.0 Der Benutzer soll das Produkt mittels Ein-/Ausziehen des MicroUSB-Steckers betreiben.
-*   A.1.1.1 Der Benutzer soll über eine Taste zum Start der Aufnahme und eine zum Halt der Aufnahme verfügen.
-*   A.1.1.2 Zweit Taster sollen zur Einstellung der Lautstärke dienen.
-*   A.1.1.3 Jeder Effekt soll über eine eigene Taste verfügbar sein.
+   A.1.1.0 Der Benutzer soll das Produkt mittels Ein-/Ausziehen des MicroUSB-Steckers betreiben.
+   A.1.1.1 Der Benutzer soll über eine Taste zum Start der Aufnahme und eine zum Halt der Aufnahme verfügen.
+   A.1.1.2 Zweit Taster sollen zur Einstellung der Lautstärke dienen.
+   A.1.1.3 Jeder Effekt soll über eine eigene Taste verfügbar sein.
 
 A.1.2 Der VoiceModulator muss mittels 2 Mikrofons Stimme aufnehmen.  
 A.1.3 Der VoiceModulator muss die aufgenommene Stimme mit Effekten modulieren <sup>[[1](Glossar.html#Glossar)]</sup>.
-
-*   A.1.3.1 Dem Benutzer soll die Moöglichkeit gegeben werden, zwischen Pitch- <sup>[[2](Glossar.html#Glossar)]</sup>,Reverb- <sup>[[3](Glossar.html#Glossar)]</sup>,Reverse <sup>[[4](Glossar.html#Glossar)]</sup>,Pikachu <sup>[[5](Glossar.html#Glossar)]</sup>,Satan <sup>[[6](Glossar.html#Glossar)]</sup> Effekt auszuwählen.
+   A.1.3.1 Dem Benutzer soll die Moöglichkeit gegeben werden, zwischen Pitch- <sup>[[2](Glossar.html#Glossar)]</sup>,Reverb- <sup>[[3](Glossar.html#Glossar)]</sup>,Reverse <sup>[[4](Glossar.html#Glossar)]</sup>,Pikachu <sup>[[5](Glossar.html#Glossar)]</sup>,Satan <sup>[[6](Glossar.html#Glossar)]</sup> Effekt auszuwählen.
 
 A.1.4 Der VoiceModulator muss die modulierte Stimme, entsprechend dem gewählten Effekt, wiederspielen.  
 A.1.5 Die Wiedergabe derselben Stimme soll bis zum nächsten neuen Aufnahme möglich sein.
-
 A.1.6 Die Stromversorgung muss über einen externen Akku erfolgen.
+A.1.7 Die eingebauten LEDs sollen als Anzeige des laufenden Aufnahmevorganges innerhalbdes Aufnahmfensters blinken.
+```
 
-A.1.7 Die eingebauten LEDs sollen als Anzeige des laufenden Aufnahmevorganges innerhalb des Aufnahmfensters blinken.
 
-<a name="Kann--Kriterien"></a>
-
-### Kann- Kriterien[¶](#Kann--Kriterien)
-
+### Kann- Kriterien <a name="Kann--Kriterien"></a>
+```
 A.2.0 Der VoiceModulator sollte in einer kubischen Box eingebaut werden.  
 A.2.1 Der Effektauswahl sollte durch schütteln ersetzt werden. Somit sollte nach Aufnahme der Stimme ein Effekt zufällig vom System gewählt werden.  
 A.2.2 Das Produkt sollte mit zusätzlichen Effekten erweitert werden.  
 A.2.3 In abhängigkeit vom gewählten Effekt sollte ein zugehöriges Display farbig leuchten, entsprechend der Waveform <sup>[[8](Glossar.html#Glossar)]</sup> der Aufnahme.  
 A.2.4 Der VoiceModulator verfügt über 2 Mikrofons. Ein Algorithmus sollte implementiert werden, der dank der Stereo-Funktionalität den Mikrofons, die Stimme aufklärt. Nebengeräusche und Hintergrundstimmen sollten ausgelöscht werden.
+```
 
+# Pflichtenheft <a name="Pflichtenheft"></a>
 
-<a name="Pflichtenheft"></a>
-
-# Pflichtenheft[¶](#Pflichtenheft)
-
+```
 <ins>B.0.0</ins> Das Produkt Muss als Raspberry Pi extension board (HAT) implementiert werden.
 
 <ins>B.1.1</ins>
@@ -160,43 +106,35 @@ B.1.5.1 Bedingung: nach erfolgreiche Aufnahme und Modulierung muss der User eine
 
 *   B.1.5.1.1 Wird die Taste nach der ersten Wiedergabe wieder betätigt, so erfolgt eine Wiederholung derselben Aufnahme.
 *   B.1.5.1.2 Die vorherige Aufnahme muss gelöscht werden erst nachdem die Taste zur Aufnahme gedrückt wird.
+```
 
 
 
-<a name="UML-Zustandsdiagramm"></a>
+# UML-Zustandsdiagramm <a name="UML-Zustandsdiagramm"></a>
 
-# UML-Zustandsdiagramm[¶](#UML-Zustandsdiagramm)
-
-![](/redmine/attachments/download/9324/zz.jpg)
-
-
-
-<a name="Produkt-Module"></a>
-
-# Produkt Module[¶](#Produkt-Module)
+# Produkt Module <a name="Produkt-Module"></a>
 
 Unser Produkt besteht aus folgendem Hardware:
-
+```
 1\. Raspberry PI 3  
 2\. 4 * 4 Matrix Testator  
 3\. 2 Microphone  
 4\. 1 [W] Lautsprecher  
 5\. 4 [Gb] SD karte
-
+```
 Für die Entwicklung benutzt: (Software)
-
+```
 1\. Raspbian Stretch Lite  
 2\. Python 2.7 & 3.0  
 3\. WM8960 Treiber  
 4\. Git  
 5\. SoX - Audio Bibliothek
+```
 
 
 
-<a name="Testspezifikationen"></a>
-
-# Testspezifikationen[¶](#Testspezifikationen)
-
+# Testspezifikationen <a name="Testspezifikationen"></a>
+```
 *   **1.Modulation von existierenden Datei**
 *   Der erste Schritt ist auf einer, sich im Speicher befindenden Datei Modulationen durchzuführen.
 
@@ -208,13 +146,10 @@ Für die Entwicklung benutzt: (Software)
 
 *   **4.Lautsprecher-Anschluss & Verstärker**
 *   Der letzte Schritt besteht daraus, der Lautsprecher anzuschließen und korrekt zu betreiben.
+```
 
-
-
-<a name="Glossar"></a>
-
-# Glossar[¶](#Glossar)
-
+# Glossar <a name="Glossar"></a>
+```
 **1\. Modulation**
 
 die Modulation beschreibt einen vorbereiteten Übergang von einer Tonart zu einer anderen. Es ist das Variiren der Eigenschaften einer Audio-Wellenform.
@@ -245,61 +180,50 @@ Sample/sampling - der Vorgang, einen Teil einer Aufnahme in einem neuen Kontext 
 **8\. Waveform**
 
 Waveform/Wellenform ist die Gestalt und Form des zeitlichen Verlaufs der Veränderung der Amplitude einer Aufnahme.
+```
+
+
+# Blockschaltbild <a name="Blockschaltbild"></a>
 
 
 
-<a name="Blockschaltbild"></a>
-
-# Blockschaltbild[¶](#Blockschaltbild)
-
-![](/redmine/attachments/download/8887/blockschaltbildSM.png)
+# BOM (Umsetzung) <a name="BOM-Umsetzung"></a>
 
 
-<a name="BOM-Umsetzung"></a>
 
-# BOM (Umsetzung)[¶](#BOM-Umsetzung)
-
-![](/redmine/attachments/download/9089/BOM.jpg)
+# Wartung und Erweiterungen <a name="Wartung-und-Erweiterungen"></a>
 
 
-<a name="Wartung-und-Erweiterungen"></a>
 
-# Wartung und Erweiterungen[¶](#Wartung-und-Erweiterungen)
-
-<a name="perfektionierende-Wartung"></a>
-
-### perfektionierende Wartung[¶](#perfektionierende-Wartung)
-
+### perfektionierende Wartung <a name="perfektionierende-Wartung"></a>
+```
 - die Baud-Rate der Datenübertragung vom Arduino-Board wird zu 115200 statt 9600  
 - Implementierung von 2 weiteren Effekten.
+```
 
-<a name="adaptive-Wartung"></a>
 
-### adaptive Wartung[¶](#adaptive-Wartung)
-
+### adaptive Wartung <a name="adaptive-Wartung"></a>
+```
 - die LEDs leuchten farbig(kuze grüne welle) wenn das Produkt nach Anschalten bereit zur Aufnahme ist.  
 - die LEDs leuchten farbig(wechselnd in Rot, Grün und Gelb) solange die Aufnahme läuft.  
 - die LEDs leuchten farbig(einmalig in Rot, Grün und Gelb) wenn der Benutzer Effekte auswählen kann.
+```
+
+# Testdurchführungen <a name="Testdurchführungen"></a>
 
 
-<a name="Testdurchführungen"></a>
-
-# Testdurchführungen[¶](#Testdurchführungen)
-
-<a name="1Modulation-von-existierenden-Datei-1"></a>
-
-### 1.Modulation von existierenden Datei <sup>[[1](Testspezifikationen.html#Testspezifikationen)]</sup>[¶](#1Modulation-von-existierenden-Datei-1)
-
+### 1.Modulation von existierenden Datei <a name="1Modulation-von-existierenden-Datei-1"></a>
+```
 - Die Datei befindet sich im Speicher des Raspberry-Pi's im .mp3 Format.  
 - Mittels Command Line Interface wird ein Effekt von der SoX Bibliothek verwendet.  
 - Die Modulation ergibt eine neue Datei mit anderem Namen und speichert sie in derselben Ordner.  
 - Mittels Command Line und ~aplay Befehl wird die modulierte Datei wiedergespielt.  
 - Kopföhrer sind in dieser Phase benutzt. Lautsprecher ist nicht angeschlossen.
+```
 
-<a name="2Modulation-von-aufgenommenen-Datei-2"></a>
 
-### 2.Modulation von aufgenommenen Datei <sup>[[2](Testspezifikationen.html#Testspezifikationen)]</sup>[¶](#2Modulation-von-aufgenommenen-Datei-2)
-
+### 2.Modulation von aufgenommenen Datei <a name="2Modulation-von-aufgenommenen-Datei-2"></a>
+```
 - Die Implementierung des Arduino-boards und Tastatur erfolgt in diesem Schritt.  
 - Eine Taste dient zum Starten der Aufnahme  
 - Nach 10 Sekunden hört die Aufnahme automatisch auf.  
@@ -307,21 +231,22 @@ Waveform/Wellenform ist die Gestalt und Form des zeitlichen Verlaufs der Veränd
 - Mittels Command Line Interface wird ein Effekt von der SoX Bibliothek verwendet.  
 - Mittels Command Line und ~aplay Befehl wird die modulierte Datei wiedergespielt.  
 - Tastatur-Tasten werden in diesem Schritt zum Aufnahme-Befehl & Wiedespielen-Befehl gemappt.
+```
 
-<a name="3Modulationskette-in-einem-Datei-3"></a>
 
-### 3.Modulationskette in einem Datei <sup>[[3](Testspezifikationen.html#Testspezifikationen)]</sup>[¶](#3Modulationskette-in-einem-Datei-3)
-
+### 3.Modulationskette in einem Datei <a name="3Modulationskette-in-einem-Datei-3"></a>
+```
 - Nach einer fehlerfreien Aufnahme werden mehrere Effekte ausgewählt.  
 - Mittels Command Line Interface werden diese angewendet.  
 - Nach fehlerfreien und korrekten Ausführung und Wiedergabe der Modulierten Datei, werden mehrere Tasten der Tastatur zu Effekten gemappt.
+```
 
-<a name="4Lautsprecher-Anschluss-38-Verstärker-4"></a>
 
-#### 4.Lautsprecher-Anschluss & Verstärker <sup>[[4](Testspezifikationen.html#Testspezifikationen)]</sup>[¶](#4Lautsprecher-Anschluss-38-Verstärker-4)
-
+### 4.Lautsprecher-Anschluss & Verstärker <a name="4Lautsprecher-Anschluss-38-Verstärker-4"></a>
+```
 - Der Lautsprecheranschluss wird benutzt um einen kleinen Lautsprecher anzuschliessen.  
 - Mittels ALSA-Mixer erfolgt eine Einstellung der Klangstärke.  
 - Ein Script wird benutzt um diese Einstellungen im Speicher abzulagern.  
 - Im Fall eines Neu-Starts werden diese Einstellungen geladen und angewendet.  
 - Zwei Tasten von der Tastatur werden benutzt um die Lautstärke der Wiedergabe einzustellen
+```
