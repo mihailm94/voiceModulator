@@ -26,6 +26,10 @@
 
 ### Projekt-Idee <a name="Projekt-Idee"></a>
 
+Der VoiceModulator ist eine Fortsetzung des Moduls Leiterplattenentwurf vom Wintersemester 17/18 an der HTW Berlin. In dem Modul haben wir die Leiterplatte in KiCAD entworfen und danach im Labor entwickelt und überprüft. Darauf folgend haben wir uns mit der Bestückung der Leiterplatte beschäftigt.
+
+Das VoiceModulator Projekt wurde im Sommersemester 2018 im Kurs Project Computer Systems Engineering umgesetzt, unter der Betreuung von Prof. Dr. Frank Bauernöppel und Prof. Dr.-Ing. Carsten Thomas.
+
 VoiceModulator ist ein Produkt, das Stimme aufnehmen kann, sie verändern und mit ihr auf interessanten Weise spielen. Mit dem VoiceModulator kann der Benutzer seine Stimme aufnehmen, modulieren, und sie wiedergeben.
 
 Mit der eingebauten Tastatur kann der Benutzer zwischen folgenden Effekten wählen:  
